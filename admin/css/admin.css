@@ -1,0 +1,176 @@
+#pagewrap {
+	width: 960px;
+}
+
+header {
+	padding: 20px 15px;
+}
+
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+	text-align: left;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 268px;
+	height: 480px;
+	padding: 5px 15px;
+	float: left;
+}
+
+footer {
+	clear: both;
+}
+
+@media screen and (max-width: 980px) {
+	.sidebar-top-margin {
+		margin-top: -5px !important;
+	}
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+	header, footer {
+		padding: 3% 4%;
+	}
+	.company-logo {
+		padding-left: 0px !important;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+	#content {
+		width: auto;
+		float: none;
+	}
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	header {
+		height: auto;
+	}
+}
+
+#content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#content, #middle, #sidebar {
+	border: solid 1px #ccc;
+}
+
+#custom-footer, #custom-header {
+	background-color: #3c8dbc;
+}
+
+#custom-footer {
+	text-align: center
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper1 {
+	min-height: 86%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.footer, .push {
+	height: 3em;
+}
+
+.company-logo {
+	width: 50px;
+	float: left;
+	margin-top: -15px;
+	margin-right: 20px;
+	padding-left: 90px;
+}
+
+.paragraph-style {
+	font-family: -webkit-body;
+}
+
+#button-id1 {
+	width: 50%;
+	height: 25px;
+	background-color: greenyellow
+}
+
+body {
+	background: #004756;
+	color: white
+}
+
+p {
+	color: white
+}
+
+h3 {
+	margin-top: 0px;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 97%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+.footer, .push {
+	height: 4em;
+}
+
+.text-box-size {
+	margin-left: -13px;
+}

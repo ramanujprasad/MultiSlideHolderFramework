@@ -1,0 +1,254 @@
+/*---Hide the bullet points---*/
+.carousel-indicators {
+	display: none;
+}
+/*---Tiles Effect Styling starts here---*/
+.card {
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.caption-text {
+	height: 25px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	font-family: serif;
+	background: #3c8dbc;
+}
+
+/* card fronts and backs */
+.card__front, .card__back {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card__front, .card__back {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.card__front {
+	background-color: #3c8dbc;
+}
+
+.tile1-front-color {
+	background-color: #40B8AA;
+	background-image: url(../img/tiles-icon/icon-1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile2-front-color {
+	background-color: #4AA6DB;
+	background-image: url(../img/tiles-icon/icon-2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile3-front-color {
+	background-color: #9C3CBC;
+	background-image: url(../img/tiles-icon/icon-3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile4-front-color {
+	background-color: #3A5AA0;
+	background-image: url(../img/tiles-icon/icon-4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile5-front-color {
+	background-color: #C8962A;
+	background-image: url(../img/tiles-icon/icon-5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile6-front-color {
+	background-color: #B9BC3C;
+	background-image: url(../img/tiles-icon/icon-6.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile7-front-color {
+	background-color: #22A63D;
+	background-image: url(../img/tiles-icon/icon-7.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile8-front-color {
+	background-color: #4E5054;
+	background-image: url(../img/tiles-icon/icon-8.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile9-front-color {
+	background-color: #A6A699;
+	background-image: url(../img/tiles-icon/icon-9.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile10-front-color {
+	background-color: #2C1789;
+	background-image: url(../img/tiles-icon/icon-10.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+.tile11-front-color {
+	background-color: #886741;
+	background-image: url(../img/tiles-icon/icon-11.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80px 80px;
+}
+
+/*.card__back {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+         transform: rotateY(-180deg);
+}*/
+.card__text {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 20px;
+	color: #fff;
+	font-family: "Roboto Slab", serif;
+	line-height: 20px;
+}
+
+/* hover effect */
+.card.effect__hover:hover .card__front {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.card-6-11.effect__hover:hover .card__front {
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	-webkit-transition-duration: 1000ms, 3000ms;
+	transition-duration: 1000ms, 3000ms;
+	-webkit-transition-delay: 0ms, 4000ms;
+	transition-delay: 0ms, 4000ms;
+}
+
+.card.effect__hover:hover .card__back {
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+
+.text-align {
+	/**margin-top: 90px;**/
+	text-transform: uppercase;
+}
+/*---Effect for desktop only---*/
+@media ( min-width : 768px) {
+	.card__front, .card__back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.text-align {
+		/** margin-top: 60px;**/
+		
+	}
+	.card {
+		position: relative;
+		float: left;
+		padding-bottom: 64%;
+		width: 100%;
+		text-align: center;
+	}
+	.card-6-11 {
+		position: relative;
+		float: left;
+		padding-bottom: 65%;
+		width: 100%;
+		text-align: center;
+	}
+	.connectedSortable {
+		min-height: 140px;
+	}
+}
+
+@media ( min-width :768px) and (max-width: 867px) {
+	.tiles-head-section {
+		padding: 4.5em 0 1.5em !important;
+	}
+	.connectedSortable {
+		min-height: 100px;
+	}
+	.text-align {
+		/**margin-top: 50px;**/
+		
+	}
+	.card {
+		position: relative;
+		float: left;
+		padding-bottom: 64%;
+		width: 100%;
+		text-align: center;
+		height: 100%;
+	}
+	.card-6-11 {
+		position: relative;
+		float: left;
+		/**padding-bottom: 110%;**/
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media ( min-width :868px) and (max-width: 1000px) {
+	.tiles-head-section {
+		padding: 4.5em 0 3.5em !important;
+	}
+	.connectedSortable {
+		min-height: 100px;
+	}
+	.card {
+		position: relative;
+		float: left;
+		padding-bottom: 56%;
+		width: 100%;
+		text-align: center;
+	}
+	.card-6-11 {
+		position: relative;
+		float: left;
+		padding-bottom: 55%;
+		width: 100%;
+		text-align: center;
+	}
+}
+/*---Tiles Effect Styling Ends here---*/
