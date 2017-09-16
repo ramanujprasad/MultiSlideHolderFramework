@@ -20,4 +20,3 @@ Below example is an based on session-based authentication
 ## Popup Slide
 
 ![Popup Slide](https://github.com/ramanujprasad/MultiSlideHolderFramework/blob/master/img/icons/popup-slide.png)
-
