@@ -1,8 +1,6 @@
 ## Multi slide holder framework:
 
-This is a responsive framework based on carousel. It has currently 2 template.
-
-Below example is an based on session-based authentication
+This is a responsive framework based on carousel. It has currently 2 templates.
 
 ## Perquisites:
 
